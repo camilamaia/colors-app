@@ -1,6 +1,6 @@
 # Colors App
 
-First iOS app developed! - based on ["Aprendendo Swift do Iniciante ao Avançado. (Mac e Windows)"](https://www.udemy.com/aprendendoswift3/) Udemy Course
+First iOS app developed! - based on [Aprendendo Swift do Iniciante ao Avançado. (Mac e Windows)](https://www.udemy.com/aprendendoswift3/) Udemy Course
 
 ---
 
