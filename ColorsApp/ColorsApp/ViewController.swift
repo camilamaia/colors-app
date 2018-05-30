@@ -11,25 +11,33 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var sliderOutlet: UISlider!
+
+    @IBOutlet weak var viewSquare: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("Hello World")
     }
 
     @IBAction func btnYellow(_ sender: Any) {
+        viewSquare.backgroundColor = UIColor.yellow
     }
     
     @IBAction func btnBlue(_ sender: Any) {
+        viewSquare.backgroundColor = UIColor.blue
     }
     
     @IBAction func btnRed(_ sender: Any) {
+        viewSquare.backgroundColor = UIColor.red
     }
     
     @IBAction func btnResetColors(_ sender: Any) {
+        viewSquare.backgroundColor = UIColor.black
     }
     
     @IBAction func slider(_ sender: Any) {
+        // CG = Core Graphics
+        viewSquare.alpha = CGFloat(sliderOutlet.value)
     }
 }
 
