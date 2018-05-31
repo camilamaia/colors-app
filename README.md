@@ -4,7 +4,8 @@ First iOS app developed! - based on [Aprendendo Swift do Iniciante ao Avançado.
 
 With this app you can change the square's color with the buttons and the opacity of it using the slider :)
 
----
+
+## Screenshots
 
 ![Screenshot 1](/screenshots/screenshot-1.png)
 
