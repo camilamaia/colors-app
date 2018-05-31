@@ -31,13 +31,52 @@ class ViewController: UIViewController {
         viewSquare.backgroundColor = UIColor.red
     }
     
-    @IBAction func btnResetColors(_ sender: Any) {
-        viewSquare.backgroundColor = UIColor.black
+    @IBAction func btnAddYellow(_ sender: Any) {
+        switch viewSquare.backgroundColor {
+        case UIColor.black:
+            viewSquare.backgroundColor = UIColor.yellow
+        case UIColor.blue:
+            viewSquare.backgroundColor = UIColor.green
+        case UIColor.red:
+            viewSquare.backgroundColor = UIColor.orange
+        default:
+            return
+        }
     }
     
+    @IBAction func btnAddBlue(_ sender: Any) {
+        switch viewSquare.backgroundColor {
+        case UIColor.black:
+            viewSquare.backgroundColor = UIColor.blue
+        case UIColor.yellow:
+            viewSquare.backgroundColor = UIColor.green
+        case UIColor.red:
+            viewSquare.backgroundColor = UIColor.purple
+        default:
+            return
+        }
+    }
+
+    @IBAction func btnAddRed(_ sender: Any) {
+        switch viewSquare.backgroundColor {
+        case UIColor.black:
+            viewSquare.backgroundColor = UIColor.red
+        case UIColor.yellow:
+            viewSquare.backgroundColor = UIColor.orange
+        case UIColor.blue:
+            viewSquare.backgroundColor = UIColor.purple
+        default:
+            return
+        }
+    }
+
     @IBAction func slider(_ sender: Any) {
         // CG = Core Graphics
         viewSquare.alpha = CGFloat(sliderOutlet.value)
+    }
+
+    @IBAction func btnResetColors(_ sender: Any) {
+        viewSquare.backgroundColor = UIColor.black
     }
 }
 
